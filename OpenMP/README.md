@@ -16,13 +16,13 @@ como o trabalho será dividido entre os processadores ou cores.
 OpenMP foi planejado para satisfazer a implementação
 em larga escala das arquiteturas SMPs.
 
-![Modelo SMP]("imgs/smp.png")
+![Modelo SMP](imgs/smp.png)
 
 ## diretivas
 
 O OpenMP trabalha na lógica fork-join, no qual após a declaração da diretiva, as threads executam suas tarefas de maneira paralela(fork) e após o término de uma, aguarda o encerramento das outras(join). Essa ideia denota que o código multi-thread tem uma parte paralela(fork) e uma sequencial(join).
 
-![Modelo SMP]("imgs/forkjoin.png")
+![Modelo SMP](imgs/forkjoin.png)
 
 ```c
 OMP_NOME
